@@ -6,18 +6,11 @@ function _init()
         w=8,
         h=8,
         flp=false,
-        dx=0,
-        dy=0,
-        max_dx=2,
-        max_dy=3,
-        acc=0.5,
+        dir='down',
+        speed=0.75,
         anim=0,
         running=false,
     }
-
-
-    --simple camera
-    -- cam_x=0
 
     --map limits
     map_start=0

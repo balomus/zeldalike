@@ -1,3 +1,9 @@
+objs={}
+
+function objdraw(o)
+    spr(o.spr, o.x, o.y)
+end
+
 function _init()
     player={
         sp=1,
@@ -16,3 +22,4 @@ function _init()
     map_start=0
     map_end=1024
 end
+

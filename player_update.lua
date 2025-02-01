@@ -25,16 +25,31 @@ function player_update()
         player.y+=player.speed
         player.dir='down'
     end
-
-    if btnp(❎) then
-        
-    end
-
+    
     if player.running
     and not btn(⬅️)
     and not btn(➡️)
     and not btn(⬆️)
     and not btn(⬇️) then
         player.running=false
+    end
+
+
+    if btnp(❎) then
+        local dx=0
+        local dy=0
+        
+        if (btn(⬅️)) dx=-2
+        if (btn(➡️)) dx=2
+        if (btn(⬆️)) dy=-2
+        if (btn(⬇️)) dy=2
+        if (not btn(⬅️) and not btn(➡️) and not btn(⬆️) and not btn(⬇️)) then
+            if (player.dir=='left') dx=-2
+            if (player.dir=='right') dx=2
+            if (player.dir=='up') dy=-2
+            if (player.dir=='down') dy=2
+        end
+
+        newbullet(player.x, player.y, 4, 4, dx, dy)
     end
 end

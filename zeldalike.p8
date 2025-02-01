@@ -7,6 +7,7 @@ __lua__
 
 #include player_update.lua
 #include player_animate.lua
+#include shoot.lua
 
 
 __gfx__

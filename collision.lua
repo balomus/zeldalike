@@ -1,5 +1,5 @@
 function col(a, b)
-    print(a.type, b.type)
+    -- print(a.type, b.type)
 
     local a_left = a.x
     local a_top = a.y

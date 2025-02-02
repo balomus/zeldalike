@@ -16,7 +16,7 @@ function _init()
         speed=0.75,
         anim=0,
         running=false,
-        health=1,
+        health=3,
         maxhealth=3
     }
 

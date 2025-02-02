@@ -12,4 +12,8 @@ function _draw()
         if (i>player.health) sp=51
         spr(sp, i*9, 5)
     end
+
+    -- print(#objs, 7)
+
+    -- print(fget(objs[1].spr), 7)
 end

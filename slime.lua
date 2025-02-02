@@ -3,7 +3,7 @@ function slimeupdate(s)
     s.y += s.dy
 
     for o in all(objs) do
-        if o.type == 'bullet' then
+        if fget(o.spr, 0) then
             if (col(s, o)) then
                 s.health -= 1
                 o.time = 1

@@ -16,7 +16,12 @@ function _init()
         speed=0.75,
         anim=0,
         running=false,
+        health=1,
+        maxhealth=3
     }
+
+    newslime(100,100,8,8,0,0)
+    -- newbullet(100,100,0,0,0,0)
 
     --map limits
     map_start=0
